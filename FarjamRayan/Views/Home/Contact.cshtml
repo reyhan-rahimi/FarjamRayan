@@ -1,0 +1,177 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+    Layout = "_Layout1";
+}
+<!-- HERO
+    ================================================== -->
+<section class="page-banner-area page-contact">
+    <div class="overlay"></div>
+    <!-- Content -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-12 col-12 text-center">
+                <div class="page-banner-content">
+                    <h1 class="display-4 font-weight-bold">تماس با ما</h1>
+                    <p>سوالات و پیشنهادات خود را با ما در میان بگذارید.</p>
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+
+<!-- SECTIONS
+================================================== -->
+<section id="contact-info">
+    <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="60">
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-map-marker"></i>
+                    <h4>آدرس</h4>
+                    <p class="lead">رفسنجان خیابان امیرکبیر 55</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-mail"></i>
+                    <h4>پست الکترونیک</h4>
+                    <p class="lead">admin@farjamrayan.com</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-phone"></i>
+                    <h4>تلفن تماس</h4>
+                    <p class="lead">09215506570</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h5>ارسال پیام</h5>
+                <!-- Heading -->
+                <h2 class="section-title mb-2 ">
+                    نظرات و پیشنهادات <span class="font-weight-normal">خود را با ما در میان بگذارید</span>
+                </h2>
+
+                <!-- Subheading -->
+                <p class="mb-5 ">
+                    در صورتی که سوال، پیشنهاد و یا انتقادی دارید از طریق فرم زیر آن را با ما در میان بگذارید.
+                </p>
+
+            </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            پیام شما با موفقیت ارسال شد.
+                        </div>
+                    </div>
+                </div>
+                <!-- end message -->
+                <!-- Contacts Form -->
+                <form class="contact_form" action="mail.php">
+                    <div class="row">
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    نام شما
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group">
+                                    <input class="form-control" name="name" id="name" required="" placeholder="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    پست الکترونیک
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group ">
+                                    <input class="form-control" name="email" id="email" required="" placeholder="" type="email">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                        <div class="w-100"></div>
+
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    عنوان پیام
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group">
+                                    <input class="form-control" name="subject" id="subject" required="" placeholder="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    تلفن تماس
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group ">
+                                    <input class="form-control" id="phone" name="phone" required="" placeholder="" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                    </div>
+
+                    <!-- Input -->
+                    <div class="form-group mb-5">
+                        <label class="h6 small d-block text-uppercase">
+                            متن پیام
+                            <span class="text-danger">*</span>
+                        </label>
+
+                        <div class="input-group">
+                            <textarea class="form-control" rows="10" name="message" id="message" required="" placeholder="پیام خود را تایپ کنید..."></textarea>
+                        </div>
+                    </div>
+                    <!-- End Input -->
+
+                    <div class="">
+                        <input name="submit" type="submit" class="btn btn-primary btn-circled" value="ارسال پیام">
+
+                        <p class="small pt-3">در کمتر از 24 ساعت پاسخگوی شما هستیم.</p>
+                    </div>
+                </form>
+                <!-- End Contacts Form -->
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <!-- START MAP -->
+                <div id="map">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%D8%B1%D9%81%D8%B3%D9%86%D8%AC%D8%A7%D9%86%20%D8%A7%D9%85%DB%8C%D8%B1%DA%A9%D8%A8%DB%8C%D8%B1%2055&t=&z=19&ie=UTF8&iwloc=&output=embed" width="100%" height="400" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- END MAP -->
+            </div>
+        </div>
+    </div>
+</section>

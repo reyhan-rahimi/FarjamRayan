@@ -1,0 +1,138 @@
+﻿@model Blog;
+@{
+    ViewData["Title"] = "Posts";
+    Layout = "~/Views/Shared/_LayoutBlog.cshtml";
+
+}
+
+
+<!-- HERO
+================================================== -->
+<section class="page-banner-area page-about">
+    <div class="overlay"></div>
+    <!-- Content -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-12 col-12 text-center">
+                <div class="page-banner-content">
+                    <h1 class="display-5 font-weight-bold">@Model.Title</h1>
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+
+<!-- LATEST BLOG
+================================================== -->
+<section class="section" id="blog">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Side Panel -->
+            <div class="col-12 col-md-4 blog-right-sidebar">
+
+                <aside class="single-sidebar-widget post-category-widget">
+                    <h4 class="widget-title">دسته بندی ها</h4>
+                    <ul class="list cat-list p-0">
+                        @{
+
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>@Model.Categories</p>
+                                    <!--<p>&nbsp;(37)</p>-->
+                                </a>
+                            </li>
+
+                        }
+                    </ul>
+                </aside>
+                @*<aside class="single-sidebar-widget popular-post-widget">
+            <h3 class="widget-title">آخرین پست ها</h3>
+            <div class="media post-item">
+                <img src="pics/blog/blog-1.jpg" class="rounded" alt="post" width="20%">
+                <div class="media-body">
+                    <a href="blog-details.html">
+                        <h6>فریم ورک FrameWork چیست؟</h6>
+                    </a>
+                    <sup>12 آذر 98</sup>
+                </div>
+            </div>
+            <div class="media post-item">
+                <img src="pics/blog/blog-2.jpg" class="rounded" alt="post" width="20%">
+                <div class="media-body">
+                    <a href="blog-details.html">
+                        <h6>تایپوگرافی (Typography) در طراحی سایت</h6>
+                    </a>
+                    <sup>2 ساعت قبل</sup>
+                </div>
+            </div>
+            <div class="media post-item">
+                <img src="pics/blog/blog-3.jpg" class="rounded" alt="post" width="20%">
+                <div class="media-body">
+                    <a href="blog-details.html">
+                        <h6>تفاوت وب سایت و پورتال چیست ؟</h6>
+                    </a>
+                    <sup>5 ساعت قبل</sup>
+                </div>
+            </div>
+        </aside>*@
+
+
+            </div>
+            <!-- /Side Panel -->
+            <!-- Blog Post Content -->
+            <div class="col-12 col-md-8 single-post-area">
+              
+              @Html.Raw(Model.Text);
+                <p>
+                    <br>
+                    <img src="/Images/@Model.Image" class="rounded" alt="post" width="50%">
+                    <br><br>
+                  
+                </p>
+
+                @*<div class="navigation-area">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-start align-items-center">
+                            <div class="thumb">
+                                <a href="#">
+                                    <img class="img-fluid" src="pics/blog/prev.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <a href="#">
+                                    <span class="ti-arrow-right text-white"></span>
+                                </a>
+                            </div>
+                            <div class="detials">
+                                <p>پست بعدی</p>
+                                <a href="#">
+                                    <h4>فریم ورک FrameWork چیست ؟</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-end align-items-center">
+                            <div class="detials">
+                                <p>پست قبلی</p>
+                                <a href="#">
+                                    <h4>پورتال (Portal) چیست؟</h4>
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <a href="#">
+                                    <span class="ti-arrow-left text-white"></span>
+                                </a>
+                            </div>
+                            <div class="thumb">
+                                <a href="#">
+                                    <img class="img-fluid" src="pics/blog/next.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+            </div>
+            <!-- /Blog Posts -->
+        </div>
+    </div>
+</section>
